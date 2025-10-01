@@ -124,8 +124,8 @@ const MeetTheTribes = () => {
 
                         <div className="grid md:grid-cols-2 gap-8">
                             <div>
-                                <h4 className="text-xl font-semibold mb-3 text-foreground">About</h4>
-                                <p className="text-muted-foreground leading-relaxed">{tribes[activeTab].description}</p>
+                                <h4 className="text-xl font-semibold mb-3 text-black">About</h4>
+                                <p className="text-black leading-relaxed">{tribes[activeTab].description}</p>
                             </div>
                             <div>
                                 <h4 className="text-xl font-semibold mb-3 text-foreground">Key Traits</h4>
