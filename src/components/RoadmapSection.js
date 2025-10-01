@@ -1,6 +1,30 @@
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 const RoadmapSection = () => {
+    const mintDate = new Date("2025-10-04T18:00:00+08:00") // 6PM PHT (GMT+8)
+
+    // Countdown state
+    const [countdown, setCountdown] = useState("")
+
+    useEffect(() => {
+        const updateCountdown = () => {
+            const now = new Date()
+            const diff = mintDate - now
+            if (diff <= 0) {
+                setCountdown("Minting is live!")
+                return
+            }
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24)
+            const minutes = Math.floor((diff / (1000 * 60)) % 60)
+            const seconds = Math.floor((diff / 1000) % 60)
+            setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`)
+        }
+        updateCountdown()
+        const timer = setInterval(updateCountdown, 1000)
+        return () => clearInterval(timer)
+    }, [])
     const phases = [
         {
             phase: "Phase 1",
@@ -23,7 +47,8 @@ const RoadmapSection = () => {
         {
             phase: "Phase 5",
             title: "NFT Minting & Launch",
-            description: "Otters Outbreak NFT collection launches on XRPL.",
+            description:
+                "Otters Outbreak NFT collection launches on XRPL.\n\nMinting will be on Oct 4, 2025 – 6PM PHT (GMT+8)\n6AM EST | 10AM UTC | 11AM CET",
             status: "current",
         },
         {
@@ -112,7 +137,12 @@ const RoadmapSection = () => {
                                             )}
                                         </div>
                                         <h3 className="text-xl font-bold mb-2 text-foreground">{item.title}</h3>
-                                        <p className="text-muted-foreground">{item.description}</p>
+                                        <p className="text-muted-foreground whitespace-pre-line">{item.description}</p>
+                                        {item.phase === "Phase 5" && (
+                                            <div className="mt-2 text-lg font-bold text-primary">
+                                                Countdown: {countdown}
+                                            </div>
+                                        )}
                                     </div>
                                 </motion.div>
                             ))}
