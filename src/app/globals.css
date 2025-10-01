@@ -1,26 +1,129 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+    :root {
+        /* Base colors - Dark theme for Project Outbreak */
+        --background: 186 100% 14%; /* Dark Navy #003B46 */
+        --foreground: 0 0% 96%; /* Off-White #F5F5F5 */
+
+        --card: 184 86% 19%; /* Deep Teal #07575B */
+        --card-foreground: 0 0% 96%;
+
+        --popover: 184 86% 19%;
+        --popover-foreground: 0 0% 96%;
+
+        --primary: 197 85% 71%; /* Baby Blue #89CFF0 */
+        --primary-foreground: 186 100% 14%;
+
+        --secondary: 120 100% 80%; /* Soft Mint #98FF98 */
+        --secondary-foreground: 186 100% 14%;
+
+        --muted: 0 0% 10%; /* Dark Gray #1A1A1A */
+        --muted-foreground: 0 0% 80%; /* Light Gray #CCCCCC */
+
+        --accent: 120 100% 80%; /* Soft Mint accent */
+        --accent-foreground: 186 100% 14%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 96%;
+
+        --border: 184 86% 25%;
+        --input: 184 86% 19%;
+        --ring: 197 85% 71%;
+
+        --radius: 1rem;
+
+        /* Custom gradients */
+        --gradient-hero: linear-gradient(135deg, hsl(186 100% 14%) 0%, hsl(184 86% 19%) 100%);
+        --gradient-section: linear-gradient(180deg, hsl(184 86% 19%) 0%, hsl(186 100% 14%) 100%);
+
+        /* Custom shadows */
+        --shadow-glow: 0 0 40px hsla(197, 85%, 71%, 0.3);
+        --shadow-card: 0 10px 30px -10px hsla(0, 0%, 0%, 0.5);
+
+        /* Animations */
+        --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .dark {
+        --background: 186 100% 14%;
+        --foreground: 0 0% 96%;
+        --card: 184 86% 19%;
+        --card-foreground: 0 0% 96%;
+        --popover: 184 86% 19%;
+        --popover-foreground: 0 0% 96%;
+        --primary: 197 85% 71%;
+        --primary-foreground: 186 100% 14%;
+        --secondary: 120 100% 80%;
+        --secondary-foreground: 186 100% 14%;
+        --muted: 0 0% 10%;
+        --muted-foreground: 0 0% 80%;
+        --accent: 120 100% 80%;
+        --accent-foreground: 186 100% 14%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 96%;
+        --border: 184 86% 25%;
+        --input: 184 86% 19%;
+        --ring: 197 85% 71%;
+    }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground font-body;
+        overflow-x: hidden;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@layer utilities {
+    .text-gradient {
+        @apply bg-clip-text text-transparent;
+        background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-float-delayed {
+        animation: float 3s ease-in-out infinite 1.5s;
+    }
+
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    .paw-pattern {
+        background-image: radial-gradient(circle, hsla(197, 85%, 71%, 0.1) 1px, transparent 1px);
+        background-size: 50px 50px;
+    }
 }
