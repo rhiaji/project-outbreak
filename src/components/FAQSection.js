@@ -13,7 +13,7 @@ const FAQSection = () => {
         },
         {
             question: "Will there be more outbreaks?",
-            answer: "Absolutely! After the Otters Outbreak, we'll be releasing Foxes, Pandas, Pigeons, and many more cute animals. Each species will have its own unique style and traits.",
+            answer: "Absolutely! After the Otters Outbreak, expect Pandas, Bunnies, Penguins, Hedgehogs, and more to join the realm. Each new species will bring fresh art, unique traits, and special community events.",
         },
         {
             question: "Do holders get rewards?",
@@ -47,9 +47,9 @@ const FAQSection = () => {
                             >
                                 <AccordionItem
                                     value={`item-${index}`}
-                                    className="bg-card border border-border rounded-2xl px-6 shadow-lg hover:shadow-xl transition-shadow"
+                                    className="bg-card border border-border rounded-2xl px-4 sm:px-6 shadow-lg hover:shadow-xl transition-shadow"
                                 >
-                                    <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-primary">
+                                    <AccordionTrigger className="text-left text-base sm:text-lg font-semibold text-foreground hover:text-primary">
                                         <span className="flex items-center gap-3">
                                             <span className="text-primary">🐾</span>
                                             {faq.question}

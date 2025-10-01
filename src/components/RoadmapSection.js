@@ -97,6 +97,24 @@ const RoadmapSection = () => {
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                 >
                                     {/* Paw print marker */}
+                                    <div className="flex md:hidden items-start mb-4">
+                                        <motion.div
+                                            className={`w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-lg ${
+                                                item.status === "current"
+                                                    ? "bg-primary text-primary-foreground"
+                                                    : item.status === "upcoming"
+                                                    ? "bg-secondary text-secondary-foreground"
+                                                    : "bg-muted text-muted-foreground"
+                                            }`}
+                                            whileHover={{ scale: 1.1, rotate: 10 }}
+                                            initial={{ scale: 0 }}
+                                            whileInView={{ scale: 1 }}
+                                            viewport={{ once: true }}
+                                            transition={{ type: "spring", delay: index * 0.1 + 0.2 }}
+                                        >
+                                            🐾
+                                        </motion.div>
+                                    </div>
                                     <div className="hidden md:flex items-start">
                                         <motion.div
                                             className={`w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg ${
@@ -117,7 +135,7 @@ const RoadmapSection = () => {
                                     </div>
 
                                     {/* Content */}
-                                    <div className="flex-1 bg-background p-6 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all group-hover:-translate-y-1 border border-border">
+                                    <div className="flex-1 bg-background p-4 sm:p-6 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all group-hover:-translate-y-1 border border-border">
                                         <div className="flex items-center gap-3 mb-2">
                                             <span
                                                 className={`text-sm font-bold px-3 py-1 rounded-full ${

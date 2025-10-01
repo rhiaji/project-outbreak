@@ -1,6 +1,9 @@
 "use client"
 import { motion } from "framer-motion"
 import { useState } from "react"
+import InteractiveTribeCard from "@/components/ui/InteractiveTribeCard"
+import SectionDivider from "@/components/ui/SectionDivider"
+import SwipeableCards from "@/components/ui/SwipeableCards"
 
 const MeetTheTribes = () => {
     const [activeTab, setActiveTab] = useState("otters")
@@ -12,10 +15,18 @@ const MeetTheTribes = () => {
             color: "text-blue-500",
             bgColor: "bg-blue-50",
             role: "First Heroes & Ambassadors",
+            shortDescription: "Brave pioneers who sparked unity",
             description:
                 "The brave pioneers who sparked the idea of unity across the Ripple Realm. 589 unique otters with vibrant colors and playful personalities.",
             traits: ["Explorers", "Diplomats", "Storytellers", "Unity Bringers"],
             status: "Available Now",
+            funFacts: [
+                "First tribe to explore beyond their home waters",
+                "Known for their signature floating formations",
+                "Can communicate through ripple patterns",
+                "Masters of underwater treasure hunting",
+            ],
+            specialTrait: "Unity Spark - Ability to inspire cooperation between different species",
         },
         pandas: {
             name: "Pandas",
@@ -23,10 +34,18 @@ const MeetTheTribes = () => {
             color: "text-green-500",
             bgColor: "bg-green-50",
             role: "Guardians of Balance",
+            shortDescription: "Wise caretakers bringing serenity",
             description:
                 "Wise caretakers from bamboo forests who bring serenity and wisdom to the realm. Masters of nature communication.",
             traits: ["Mediators", "Nature Communicators", "Wisdom Keepers", "Peace Makers"],
             status: "Coming Soon",
+            funFacts: [
+                "Can understand the language of plants",
+                "Sleep 14 hours a day but dream of great adventures",
+                "Their black and white fur represents balance",
+                "Bamboo grows faster in their presence",
+            ],
+            specialTrait: "Nature Harmony - Ability to restore ecological balance",
         },
         bunnies: {
             name: "Bunnies",
@@ -34,10 +53,18 @@ const MeetTheTribes = () => {
             color: "text-pink-500",
             bgColor: "bg-pink-50",
             role: "Sprightly Stewards",
+            shortDescription: "Creative builders and celebrators",
             description:
                 "Creative builders and farmers who transform communities with their ingenuity and teamwork. Masters of celebration.",
             traits: ["Builders", "Craftsmen", "Festival Organizers", "Community Leaders"],
             status: "Coming Soon",
+            funFacts: [
+                "Can build entire villages in a single day",
+                "Their ear positions convey complex emotions",
+                "Expert carrot cultivators and recipe inventors",
+                "Organize the realm's best seasonal festivals",
+            ],
+            specialTrait: "Creative Burst - Ability to inspire innovative solutions",
         },
         penguins: {
             name: "Penguins",
@@ -45,9 +72,17 @@ const MeetTheTribes = () => {
             color: "text-cyan-500",
             bgColor: "bg-cyan-50",
             role: "Navigators from Afar",
+            shortDescription: "Brave explorers from icy seas",
             description: "Brave explorers from icy southern isles who chart the seas and expand the realm's horizons.",
             traits: ["Navigators", "Map Makers", "Explorers", "Global Connectors"],
             status: "Coming Soon",
+            funFacts: [
+                "Can slide on ice at incredible speeds",
+                "Their formal waddle is actually a complex dance",
+                "Navigate by the stars and ocean currents",
+                "Each penguin has a unique call signature",
+            ],
+            specialTrait: "Pathfinding - Ability to find routes through any terrain",
         },
         hedgehogs: {
             name: "Hedgehogs",
@@ -55,10 +90,18 @@ const MeetTheTribes = () => {
             color: "text-purple-500",
             bgColor: "bg-purple-50",
             role: "Keepers of Knowledge",
+            shortDescription: "Mighty scholars and inventors",
             description:
                 "Small but mighty scholars who preserve all knowledge and create ingenious solutions for the realm.",
             traits: ["Scholars", "Librarians", "Engineers", "Record Keepers"],
             status: "Coming Soon",
+            funFacts: [
+                "Can memorize entire libraries in a single night",
+                "Their spines store information like data crystals",
+                "Invented the realm's first communication devices",
+                "Roll into balls to think faster",
+            ],
+            specialTrait: "Knowledge Matrix - Ability to instantly access any stored information",
         },
     }
 
@@ -76,76 +119,24 @@ const MeetTheTribes = () => {
                     </p>
                 </div>
 
-                {/* Tribe Selector Tabs */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
-                    {tribeKeys.map((tribe) => (
-                        <motion.button
-                            key={tribe}
-                            onClick={() => setActiveTab(tribe)}
-                            className={`px-6 py-3 rounded-full font-semibold transition-all ${
-                                activeTab === tribe
-                                    ? `${tribes[tribe].color} bg-background shadow-lg scale-105`
-                                    : "text-muted-foreground hover:text-foreground bg-card"
-                            }`}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <span className="text-2xl mr-2">{tribes[tribe].emoji}</span>
-                            {tribes[tribe].name}
-                        </motion.button>
+                {/* Interactive Tribe Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    {Object.values(tribes).map((tribe, index) => (
+                        <InteractiveTribeCard key={tribe.name} tribe={tribe} index={index} />
                     ))}
                 </div>
 
-                {/* Active Tribe Details */}
-                <motion.div
-                    key={activeTab}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-4xl mx-auto"
-                >
-                    <div className={`${tribes[activeTab].bgColor} rounded-3xl p-8 shadow-xl`}>
-                        <div className="text-center mb-8">
-                            <div className="text-8xl mb-4">{tribes[activeTab].emoji}</div>
-                            <h3 className="text-3xl font-bold text-foreground mb-2">{tribes[activeTab].name}</h3>
-                            <p className={`text-xl font-semibold ${tribes[activeTab].color} mb-4`}>
-                                {tribes[activeTab].role}
-                            </p>
-                            <div
-                                className={`inline-block px-4 py-2 rounded-full text-sm font-semibold ${
-                                    activeTab === "otters"
-                                        ? "bg-primary text-primary-foreground"
-                                        : "bg-secondary text-secondary-foreground"
-                                }`}
-                            >
-                                {tribes[activeTab].status}
-                            </div>
-                        </div>
+                {/* Mobile Swipeable Cards for detailed traits */}
+                <SwipeableCards
+                    title="Explore Tribe Abilities"
+                    cards={Object.values(tribes).map((tribe) => ({
+                        icon: tribe.emoji,
+                        title: `${tribe.name} Abilities`,
+                        description: `${tribe.description} Special traits: ${tribe.traits.join(", ")}.`,
+                    }))}
+                />
 
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div>
-                                <h4 className="text-xl font-semibold mb-3 text-black">About</h4>
-                                <p className="text-black leading-relaxed">{tribes[activeTab].description}</p>
-                            </div>
-                            <div>
-                                <h4 className="text-xl font-semibold mb-3 text-foreground">Key Traits</h4>
-                                <div className="grid grid-cols-2 gap-2">
-                                    {tribes[activeTab].traits.map((trait, index) => (
-                                        <motion.div
-                                            key={trait}
-                                            initial={{ opacity: 0, scale: 0.8 }}
-                                            animate={{ opacity: 1, scale: 1 }}
-                                            transition={{ delay: index * 0.1 }}
-                                            className="bg-background rounded-lg px-3 py-2 text-sm font-medium text-center"
-                                        >
-                                            {trait}
-                                        </motion.div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
+                <SectionDivider type="pawprints" />
             </div>
         </section>
     )

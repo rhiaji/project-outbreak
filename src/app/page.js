@@ -14,7 +14,6 @@ const HomePage = () => {
         <div className="min-h-screen">
             <Navbar />
             <div className="pt-20">
-                {" "}
                 {/* Add padding to account for fixed navbar */}
                 <HeroSection />
                 <AboutSection />

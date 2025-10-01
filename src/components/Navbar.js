@@ -65,8 +65,8 @@ const Navbar = () => {
 
             {/* Mobile menu */}
             {isOpen && (
-                <div className="md:hidden bg-background border-t">
-                    <div className="container mx-auto px-4 py-4 space-y-4">
+                <div className="md:hidden bg-background/95 backdrop-blur-md border-t">
+                    <div className="container mx-auto px-4 py-6 space-y-4">
                         <Link
                             href="/"
                             className="block text-muted-foreground hover:text-foreground transition-colors"

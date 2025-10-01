@@ -70,7 +70,7 @@ const HeroSection = () => {
                     </motion.div>
 
                     <motion.p
-                        className="text-xl md:text-2xl mb-12 text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+                        className="text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
@@ -79,7 +79,7 @@ const HeroSection = () => {
                     </motion.p>
 
                     <motion.div
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                        className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-4"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
@@ -87,31 +87,31 @@ const HeroSection = () => {
                         <Button
                             size="lg"
                             variant="outline"
-                            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 border-secondary text-xl px-10 py-7 rounded-full font-semibold shadow-lg hover:shadow-secondary/50 transition-all group"
+                            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 border-secondary text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 py-4 sm:py-6 md:py-7 rounded-full font-semibold shadow-lg hover:shadow-secondary/50 transition-all group w-full sm:w-auto"
                             asChild
                         >
                             <a href="https://x.com/Outbreak_XRP" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faXTwitter} className="mr-2 h-5 w-5 group-hover:animate-pulse" />
-                                Join the Community
+                                <FontAwesomeIcon icon={faXTwitter} className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
+                                <span className="whitespace-nowrap">Join the Community</span>
                             </a>
                         </Button>
                         <Button
                             size="lg"
                             variant="outline"
-                            className="bg-card text-foreground hover:bg-secondary hover:text-secondary-foreground border-secondary text-xl px-10 py-7 rounded-full font-semibold shadow-lg hover:shadow-secondary/50 transition-all group"
+                            className="bg-card text-foreground hover:bg-secondary hover:text-secondary-foreground border-secondary text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 py-4 sm:py-6 md:py-7 rounded-full font-semibold shadow-lg hover:shadow-secondary/50 transition-all group w-full sm:w-auto"
                             asChild
                         >
                             <a href="https://t.me/+R7pVBMjJ-lZlNGE1" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faTelegram} className="mr-2 h-5 w-5 group-hover:animate-pulse" />
-                                Join on Telegram
+                                <FontAwesomeIcon icon={faTelegram} className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
+                                <span className="whitespace-nowrap">Join on Telegram</span>
                             </a>
                         </Button>
                     </motion.div>
                 </div>
 
                 {/* Decorative floating paw prints */}
-                <div className="absolute top-20 left-10 text-primary/20 text-6xl animate-float">🐾</div>
-                <div className="absolute bottom-20 right-10 text-secondary/20 text-6xl animate-float-delayed">🐾</div>
+                <div className="absolute top-10 sm:top-20 left-2 sm:left-10 text-primary/20 text-4xl sm:text-6xl animate-float">🐾</div>
+                <div className="absolute bottom-10 sm:bottom-20 right-2 sm:right-10 text-secondary/20 text-4xl sm:text-6xl animate-float-delayed">🐾</div>
             </div>
         </section>
     )

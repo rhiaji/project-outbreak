@@ -12,9 +12,9 @@ const AboutSection = () => {
     ]
 
     return (
-        <section id="about" className="py-20 bg-card">
+        <section id="about" className="py-12 sm:py-16 md:py-20 bg-card">
             <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
                     {/* Left: Text Content */}
                     <motion.div
                         className="space-y-6 md:order-1 order-2"
@@ -23,7 +23,7 @@ const AboutSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
                             What is <span className="text-gradient">Project Outbreak</span>?
                         </h2>
 
@@ -31,7 +31,7 @@ const AboutSection = () => {
                             Where cuteness meets the blockchain.
                         </p>
 
-                        <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+                        <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
                             <p>
                                 Project Outbreak is a series of{" "}
                                 <span className="text-primary font-semibold">
