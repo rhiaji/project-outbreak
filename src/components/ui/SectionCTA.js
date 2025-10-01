@@ -37,7 +37,9 @@ const SectionCTA = ({
         >
             <div className="bg-gradient-to-r from-card/50 to-background/50 backdrop-blur-sm border border-border/50 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto">
                 {title && <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">{title}</h3>}
-                {description && <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed">{description}</p>}
+                {description && (
+                    <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed">{description}</p>
+                )}
 
                 {buttonHref ? (
                     isExternal ? (

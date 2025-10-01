@@ -91,7 +91,10 @@ const HeroSection = () => {
                             asChild
                         >
                             <a href="https://x.com/Outbreak_XRP" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faXTwitter} className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
+                                <FontAwesomeIcon
+                                    icon={faXTwitter}
+                                    className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse"
+                                />
                                 <span className="whitespace-nowrap">Join the Community</span>
                             </a>
                         </Button>
@@ -102,7 +105,10 @@ const HeroSection = () => {
                             asChild
                         >
                             <a href="https://t.me/+R7pVBMjJ-lZlNGE1" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faTelegram} className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
+                                <FontAwesomeIcon
+                                    icon={faTelegram}
+                                    className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse"
+                                />
                                 <span className="whitespace-nowrap">Join on Telegram</span>
                             </a>
                         </Button>
@@ -110,8 +116,12 @@ const HeroSection = () => {
                 </div>
 
                 {/* Decorative floating paw prints */}
-                <div className="absolute top-10 sm:top-20 left-2 sm:left-10 text-primary/20 text-4xl sm:text-6xl animate-float">🐾</div>
-                <div className="absolute bottom-10 sm:bottom-20 right-2 sm:right-10 text-secondary/20 text-4xl sm:text-6xl animate-float-delayed">🐾</div>
+                <div className="absolute top-10 sm:top-20 left-2 sm:left-10 text-primary/20 text-4xl sm:text-6xl animate-float">
+                    🐾
+                </div>
+                <div className="absolute bottom-10 sm:bottom-20 right-2 sm:right-10 text-secondary/20 text-4xl sm:text-6xl animate-float-delayed">
+                    🐾
+                </div>
             </div>
         </section>
     )

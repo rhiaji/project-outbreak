@@ -142,13 +142,15 @@ All colors MUST be HSL.
             padding-left: 1rem;
             padding-right: 1rem;
         }
-        
+
         /* Ensure touch targets are at least 44px */
-        button, a, .cursor-pointer {
+        button,
+        a,
+        .cursor-pointer {
             min-height: 44px;
             min-width: 44px;
         }
-        
+
         /* Better spacing on mobile */
         .space-y-4 > * + * {
             margin-top: 1rem;
