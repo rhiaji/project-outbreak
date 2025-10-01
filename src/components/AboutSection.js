@@ -54,14 +54,29 @@ const AboutSection = () => {
                         </div>
 
                         <div className="mt-8">
-                            <Link href="/ripple-realm">
-                                <Button
-                                    size="lg"
-                                    className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <Link href="/ripple-realm">
+                                    <Button
+                                        size="lg"
+                                        className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full sm:w-auto"
+                                    >
+                                        Explore the Ripple Realm
+                                    </Button>
+                                </Link>
+                                <a
+                                    href="https://xrpl.to/projectoutbreak"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full sm:w-auto"
                                 >
-                                    Explore the Ripple Realm
-                                </Button>
-                            </Link>
+                                    <Button
+                                        size="lg"
+                                        className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto"
+                                    >
+                                        Mint Otters
+                                    </Button>
+                                </a>
+                            </div>
                         </div>
                     </motion.div>
 
