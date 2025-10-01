@@ -26,7 +26,7 @@ export const metadata = {
         siteName: "Project Outbreak",
         images: [
             {
-                url: "/thumbnail.png",
+                url: "/assets/thumbnail.png",
                 width: 1200,
                 height: 630,
                 alt: "Project Outbreak Thumbnail",
@@ -39,7 +39,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "Project Outbreak - Cute Animals on XRPL",
         description: "Discover the Ripple Realm where cute animals unite across the XRPL blockchain.",
-        images: ["/thumbnail.png"],
+        images: ["/assets/thumbnail.png"],
     },
     viewport: "width=device-width, initial-scale=1",
     robots: "index, follow",
