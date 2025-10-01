@@ -22,14 +22,14 @@ export const metadata = {
         title: "Project Outbreak - Cute Animals on XRPL",
         description:
             "Discover the Ripple Realm where cute animals unite across the XRPL blockchain. Start your journey with the Otter Outbreak collection.",
-        url: "https://projectoutbreak.com",
+        url: "https://www.projectoutbreak.site/",
         siteName: "Project Outbreak",
         images: [
             {
-                url: "/assets/banner.png",
+                url: "/thumbnail.png",
                 width: 1200,
                 height: 630,
-                alt: "Project Outbreak banner",
+                alt: "Project Outbreak Thumbnail",
             },
         ],
         locale: "en_US",
@@ -39,7 +39,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "Project Outbreak - Cute Animals on XRPL",
         description: "Discover the Ripple Realm where cute animals unite across the XRPL blockchain.",
-        images: ["/assets/banner.png"],
+        images: ["/thumbnail.png"],
     },
     viewport: "width=device-width, initial-scale=1",
     robots: "index, follow",

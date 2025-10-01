@@ -77,7 +77,7 @@ const Footer = () => {
                         })}
                     </div>
 
-                    {/* Copyright */}
+                    {/* Minting/Browsing Link */}
                     <div className="pt-8 border-t border-border space-y-4">
                         <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                             <span>Powered by</span>
@@ -88,6 +88,16 @@ const Footer = () => {
                             <span className="text-lg">☕</span>
                             <span>&</span>
                             <span className="text-red-500 text-lg">❤️</span>
+                        </div>
+                        <div className="flex items-center justify-center gap-2 text-sm mt-2">
+                            <a
+                                href="https://xrp.cafe/collection/otters-outbreak"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary underline hover:text-secondary transition-colors font-semibold"
+                            >
+                                Mint or buy Otters Outbreak on XRP Cafe
+                            </a>
                         </div>
                         <p className="text-muted-foreground">© 2025 Project Outbreak. All rights reserved.</p>
                     </div>
