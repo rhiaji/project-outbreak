@@ -50,10 +50,6 @@ const CollectionsSection = () => {
                                         <span className="text-muted-foreground">Trait Categories:</span>
                                         <span className="font-semibold">6</span>
                                     </div>
-                                    <div className="flex justify-between">
-                                        <span className="text-muted-foreground">Rarity:</span>
-                                        <span className="font-semibold text-secondary">Commons → Legendary</span>
-                                    </div>
                                 </div>
                             </CardContent>
                         </Card>
