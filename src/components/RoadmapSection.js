@@ -67,9 +67,9 @@ const RoadmapSection = () => {
         },
         {
             phase: "Phase 8",
-            title: "Token Holder Rewards",
+            title: "Future Collections & Expansion",
             description:
-                "• Track and reward the top token holders\n• Exclusive NFTs, boosts, or governance votes for those holding the most tokens\n• Community recognition for top holders\n\nPurpose: Incentivize holding and reward loyal community members",
+                "Pandas, Bunnies, Penguins, Hedgehogs, and more join the realm with enhanced token integration. Next collections launch in 2026 and beyond. No free airdrops to token-only holders for new collections.",
             status: "future",
         },
         {

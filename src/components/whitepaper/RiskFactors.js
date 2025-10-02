@@ -56,6 +56,14 @@ const RiskFactors = () => (
                             funds you can afford to lose and conduct your own research before making any purchase
                             decisions.
                         </p>
+                        <div className="mt-4 p-4 bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 rounded-lg">
+                            <h4 className="font-bold mb-2 text-black">Fairness Guardrail</h4>
+                            <p className="text-black text-sm">
+                                To protect fairness,{" "}
+                                <strong>no rewards are issued to token-only holders for new collections</strong>. Only
+                                NFT holders are eligible for collection rewards and airdrops.
+                            </p>
+                        </div>
                     </div>
                 </CardContent>
             </Card>

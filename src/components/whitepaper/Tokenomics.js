@@ -27,16 +27,7 @@ const Tokenomics = () => (
                                         <strong>Standard:</strong> Native XRPL Token
                                     </li>
                                     <li>
-                                        <strong>Ticker:</strong> OUTBREAK
-                                    </li>
-                                    <li>
-                                        <strong>Issuer:</strong> TBD (Post-Launch)
-                                    </li>
-                                    <li>
                                         <strong>Liquidity:</strong> AMM Integration (XLS-30)
-                                    </li>
-                                    <li>
-                                        <strong>Trading Pair:</strong> OUTBREAK ↔ XRP
                                     </li>
                                 </ul>
                             </div>
