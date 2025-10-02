@@ -86,7 +86,7 @@ export default function MemeGenerator() {
             watermark.crossOrigin = "anonymous"
             watermark.src = watermarkLogo || "/assets/watermark.png"
             watermark.onload = () => {
-                ctx.globalAlpha = 0.7
+                ctx.globalAlpha = 1
                 ctx.drawImage(watermark, 0, 0, canvas.width, canvas.height)
                 ctx.globalAlpha = 1.0
             }
