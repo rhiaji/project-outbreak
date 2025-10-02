@@ -27,19 +27,25 @@ const Tokenomics = () => (
                                         <strong>Standard:</strong> Native XRPL Token
                                     </li>
                                     <li>
+                                        <strong>Ticker:</strong> OUTBREAK
+                                    </li>
+                                    <li>
+                                        <strong>Issuer:</strong> TBD (Post-Launch)
+                                    </li>
+                                    <li>
                                         <strong>Liquidity:</strong> AMM Integration (XLS-30)
                                     </li>
                                     <li>
-                                        <strong>Trading Pair:</strong> TOKEN ↔ XRP
+                                        <strong>Trading Pair:</strong> OUTBREAK ↔ XRP
                                     </li>
                                 </ul>
                             </div>
                             <div>
                                 <h4 className="font-bold mb-3 text-secondary">Primary Utilities</h4>
                                 <ul className="space-y-2 text-sm">
-                                    <li>• Free mints for new collections</li>
-                                    <li>• Holder reward tiers</li>
-                                    <li>• Governance voting power</li>
+                                    <li>• Purchasable whitelist/free-mint spots</li>
+                                    <li>• Liquidity Wars participation</li>
+                                    <li>• Advisory governance voting</li>
                                     <li>• Exclusive event access</li>
                                 </ul>
                             </div>
@@ -83,24 +89,23 @@ const Tokenomics = () => (
                 <CardContent>
                     <div className="space-y-4">
                         <div className="p-4 border border-primary/20 rounded-lg">
-                            <h4 className="font-bold text-primary mb-2">Free Mint Access</h4>
+                            <h4 className="font-bold text-primary mb-2">Whitelist/Free-Mint Spots (Purchasable)</h4>
                             <p className="text-sm">
-                                Token holders can spend tokens to secure free mints for new outbreak collections,
-                                providing immediate utility and value.
+                                Token holders can spend tokens to purchase free-mint spots in upcoming collections.
                             </p>
                         </div>
                         <div className="p-4 border border-secondary/20 rounded-lg">
-                            <h4 className="font-bold text-secondary mb-2">Holder Tier Rewards</h4>
+                            <h4 className="font-bold text-secondary mb-2">Liquidity Wars Participation</h4>
                             <p className="text-sm">
-                                Top token holders receive exclusive NFTs, governance votes, and community recognition
-                                based on their holding amounts.
+                                Provide liquidity in the TOKEN↔XRP AMM to climb the LP leaderboard for perks and
+                                recognition.
                             </p>
                         </div>
                         <div className="p-4 border border-primary/20 rounded-lg">
-                            <h4 className="font-bold text-primary mb-2">Ecosystem Growth</h4>
+                            <h4 className="font-bold text-primary mb-2">Roadmap Influence</h4>
                             <p className="text-sm">
-                                As new collections launch and the ecosystem grows, token utility and demand increase,
-                                potentially appreciating token value.
+                                Token holders may signal roadmap priorities (advisory voting), while NFT holders retain
+                                binding votes on realm/species expansions.
                             </p>
                         </div>
                     </div>

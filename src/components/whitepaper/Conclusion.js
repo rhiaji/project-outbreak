@@ -20,8 +20,8 @@ const Conclusion = () => (
                                 Project Outbreak represents a new paradigm in NFT collections, combining the universal
                                 appeal of cute animals with innovative blockchain technology, sustainable tokenomics,
                                 and genuine utility. Built on the fast, eco-friendly XRPL blockchain, our ecosystem
-                                offers holders real value through token-based free mints, community governance, and an
-                                ever-expanding universe of adorable characters.
+                                offers holders real value through purchasable whitelist spots, community governance, and
+                                an ever-expanding universe of adorable characters.
                             </p>
                             <p className="text-lg leading-relaxed">
                                 The Ripple Realm serves as more than just backstory—it's a living world that grows with
@@ -34,11 +34,11 @@ const Conclusion = () => (
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button size="lg" asChild>
                                         <a
-                                            href="https://xrpl.to/projectoutbreak"
+                                            href="https://xrp.cafe/collection/otters-outbreak"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            Mint Genesis Otters
+                                            Mint on XRP Cafe
                                         </a>
                                     </Button>
                                     <Button size="lg" variant="outline" asChild>

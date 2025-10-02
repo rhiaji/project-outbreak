@@ -28,25 +28,18 @@ const CommunityGovernance = () => (
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <h4 className="font-bold mb-3 text-primary">Governance Rights</h4>
-                                    <div className="mb-2">
-                                        <strong>NFT Holders</strong>
+                                    <div className="mb-4">
+                                        <strong>NFT Holders (binding):</strong>
                                         <ul className="space-y-2 text-sm list-disc ml-5 mt-1">
-                                            <li>Vote on introducing new species and realm expansions</li>
-                                            <li>
-                                                Receive direct rewards in future collections (e.g.,{" "}
-                                                <strong>free mints, airdrops, and exclusive perks</strong>)
-                                            </li>
+                                            <li>Vote on new species and realm expansions</li>
+                                            <li>Receive free mints/airdrops in future collections</li>
                                         </ul>
                                     </div>
                                     <div>
-                                        <strong>Token Holders</strong>
+                                        <strong>Token Holders (advisory + utility):</strong>
                                         <ul className="space-y-2 text-sm list-disc ml-5 mt-1">
-                                            <li>Influence roadmap priorities and utility development</li>
-                                            <li>
-                                                Gain access to <strong>purchasable whitelist/free-mint spots</strong> in
-                                                upcoming collections
-                                            </li>
-                                            <li>Participate in Liquidity Wars and governance decisions</li>
+                                            <li>Signal roadmap priorities and purchase whitelist/free-mint spots</li>
+                                            <li>Compete in Liquidity Wars for perks</li>
                                         </ul>
                                     </div>
                                 </div>

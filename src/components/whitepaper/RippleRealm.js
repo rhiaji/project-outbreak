@@ -65,6 +65,14 @@ const RippleRealm = () => (
                                 </div>
                             </div>
                         </div>
+                        <div className="bg-secondary/10 p-4 rounded-lg border-l-4 border-secondary">
+                            <p className="text-sm text-muted-foreground">
+                                <strong>Community Co-Creation:</strong> The Ripple Realm grows through community input.
+                                <Link href="#community" className="text-primary hover:underline ml-1">
+                                    Learn how your voice shapes our world →
+                                </Link>
+                            </p>
+                        </div>
                     </div>
                 </CardContent>
             </Card>

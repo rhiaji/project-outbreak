@@ -16,7 +16,7 @@ const NFTCollections = () => (
                     <CardHeader>
                         <div className="flex items-center justify-between">
                             <CardTitle>Genesis Collection: Otters Outbreak</CardTitle>
-                            <Badge className="bg-primary text-primary-foreground">Live</Badge>
+                            <Badge className="bg-primary text-primary-foreground">Minting Oct 4, 2025</Badge>
                         </div>
                     </CardHeader>
                     <CardContent>

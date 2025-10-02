@@ -19,6 +19,13 @@ const HeroSection = () => (
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-6 sm:mb-8">
                 Building the Future of Cute Animal NFTs on XRPL
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button size="lg" className="w-full sm:w-auto" asChild>
+                    <a href="https://xrp.cafe/collection/otters-outbreak" target="_blank" rel="noopener noreferrer">
+                        Mint on XRP Cafe
+                    </a>
+                </Button>
+            </div>
         </motion.div>
     </section>
 )

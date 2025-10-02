@@ -10,25 +10,25 @@ const roadmapData = [
         phase: "Phase 1-5",
         title: "Foundation & Launch",
         status: "Q4 2025",
-        items: ["NFT Art Creation", "Community Building", "Website Launch", "Genesis Minting"],
+        items: ["NFT Art Creation", "Community Channels", "Website Launch", "NFT Minting & Launch"],
     },
     {
         phase: "Phase 6-7",
         title: "Token & Utility Launch",
         status: "Q4 2025",
-        items: ["Native Token Creation", "AMM Liquidity Setup", "Free Mint Utility Launch"],
+        items: ["Token Creation & Initial Liquidity", "Token Utility for Free Mints"],
     },
     {
         phase: "Phase 8-9",
         title: "Ecosystem Expansion",
         status: "Q4 2025",
-        items: ["Token Holder Rewards", "New Species Collections", "Cross-Collection Utility"],
+        items: ["Token Holder Rewards", "New Outbreaks Expansion"],
     },
     {
-        phase: "Phase 10+",
+        phase: "Phase 10",
         title: "Sustainable Growth",
         status: "Q4 2025",
-        items: ["Treasury Reinforcement", "Partnership Expansion"],
+        items: ["Treasury Growth & Ongoing Reinforcement"],
     },
 ]
 
