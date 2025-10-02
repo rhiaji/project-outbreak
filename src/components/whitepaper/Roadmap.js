@@ -19,10 +19,21 @@ const roadmapData = [
         items: ["Token Creation & Initial Liquidity", "Token Utility for Free Mints"],
     },
     {
-        phase: "Phase 8-9",
-        title: "Ecosystem Expansion",
+        phase: "Phase 8",
+        title: "Pandas Collection Release",
         status: "Q4 2025",
-        items: ["Token Holder Rewards", "New Outbreaks Expansion"],
+        items: [
+            "Pandas join the Outbreak realm! The Panda collection launches in Q4 2025. No token voting for now—only NFT holders have governance rights. No free airdrops to token-only holders for new collections.",
+        ],
+    },
+    {
+        phase: "Phase 9-10",
+        title: "Future Outbreaks & Sustainable Growth",
+        status: "2026 and beyond",
+        items: [
+            "Bunnies, Penguins, Hedgehogs, and more join the realm with enhanced token integration.",
+            "Treasury Growth & Ongoing Reinforcement",
+        ],
     },
     {
         phase: "Phase 10",

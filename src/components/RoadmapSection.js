@@ -67,9 +67,9 @@ const RoadmapSection = () => {
         },
         {
             phase: "Phase 8",
-            title: "Future Collections & Expansion",
+            title: "Pandas Collection Release",
             description:
-                "Pandas, Bunnies, Penguins, Hedgehogs, and more join the realm with enhanced token integration. Next collections launch in 2026 and beyond. No free airdrops to token-only holders for new collections.",
+                "Pandas join the Outbreak realm! The Panda collection launches in Q4 2025. Free mints for Panda NFTs will be based on holding 3-5 Otters in your wallet. No token voting for now—only NFT holders have governance rights. No free airdrops to token-only holders for new collections.",
             status: "future",
         },
         {

@@ -57,10 +57,10 @@ const NFTCollections = () => (
                 <h3 className="text-2xl font-bold mb-6 text-center">Future Collections Roadmap</h3>
                 <div className="grid gap-6">
                     {[
-                        { name: "Pandas Outbreak", role: "Guardians of Balance", status: "Coming Q4 2026" },
-                        { name: "Bunnies Outbreak", role: "Creative Builders", status: "2026" },
-                        { name: "Penguins Outbreak", role: "Brave Navigators", status: "2026" },
-                        { name: "Hedgehogs Outbreak", role: "Keepers of Knowledge", status: "2026" },
+                        { name: "Pandas Outbreak", role: "Guardians of Balance", status: "Q4 2025" },
+                        { name: "Bunnies Outbreak", role: "Creative Builders", status: "2026 and beyond" },
+                        { name: "Penguins Outbreak", role: "Brave Navigators", status: "2026 and beyond" },
+                        { name: "Hedgehogs Outbreak", role: "Keepers of Knowledge", status: "2026 and beyond" },
                     ].map((collection, index) => (
                         <Card key={collection.name}>
                             <CardContent className="p-6">
