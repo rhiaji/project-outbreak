@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ExternalLink } from "lucide-react"
 
 const AboutSection = () => {
     const otters = [
@@ -55,12 +56,12 @@ const AboutSection = () => {
 
                         <div className="mt-8">
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Link href="/ripple-realm">
+                                <Link href="/meme-generator">
                                     <Button
                                         size="lg"
                                         className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full sm:w-auto"
                                     >
-                                        Explore the Ripple Realm
+                                        Create a Meme
                                     </Button>
                                 </Link>
                                 <a
@@ -73,6 +74,7 @@ const AboutSection = () => {
                                         size="lg"
                                         className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto"
                                     >
+                                        <ExternalLink className="mr-2" />
                                         Mint Otters
                                     </Button>
                                 </a>
