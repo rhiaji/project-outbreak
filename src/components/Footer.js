@@ -24,7 +24,7 @@ const Footer = () => {
                             alt="Project Outbreak"
                             width={192}
                             height={96}
-                            className="w-48 opacity-90"
+                            className="w-48 opacity-90 mb-8"
                         />
                     </div>
 

@@ -17,7 +17,6 @@ const HeroSection = () => {
                     animate={{
                         scale: [1, 1.5, 1],
                         opacity: [0.3, 0.1, 0.3],
-                        // ...existing code...
                     }}
                     transition={{
                         duration: 4,
@@ -49,22 +48,12 @@ const HeroSection = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
                     >
-                        {/* Claw mark scratch animation */}
-                        <motion.div
-                            className="absolute inset-0 flex items-center justify-center"
-                            initial={{ opacity: 0, scale: 1.2, rotate: -15 }}
-                            animate={{ opacity: [0, 0.3, 0], scale: [1.2, 1, 1], rotate: [-15, -10, -15] }}
-                            transition={{ duration: 1.5, delay: 0.8, ease: "easeOut" }}
-                        >
-                            <div className="text-8xl text-primary/30">🗡️</div>
-                        </motion.div>
-
                         <Image
                             src="/assets/logo.png"
                             alt="Project Outbreak Logo"
                             width={384}
                             height={192}
-                            className="w-64 md:w-96 mx-auto mb-8 drop-shadow-2xl relative z-10"
+                            className="w-64 md:w-96 mx-auto mb-16 drop-shadow-2xl relative z-10"
                             priority
                         />
                     </motion.div>
