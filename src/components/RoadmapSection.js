@@ -53,20 +53,37 @@ const RoadmapSection = () => {
         },
         {
             phase: "Phase 6",
-            title: "Token Creation & Utilities",
-            description: "Plan and create the project token, define its utilities for the ecosystem.",
+            title: "Token Creation & Initial Liquidity",
+            description:
+                "• Create our native token on XRPL with proper issuer setup\n• Use NFT funds to seed liquidity pool (token ↔ XRP)\n• Utilize XRPL's native AMM system (XLS-30) for trading\n\nPurpose: Establish tradability and initial liquidity for seamless token transactions",
             status: "upcoming",
         },
         {
             phase: "Phase 7",
-            title: "Liquidity Pool Setup",
-            description: "Establish liquidity pool for the token and enable trading.",
+            title: "Token Utility for Free Mints",
+            description:
+                "• Tokens can be used to purchase free mints for new collections\n• Token holders get exclusive access to mint new outbreaks at no additional cost\n• Simple token-to-mint exchange system\n\nPurpose: Drive token demand through direct utility for accessing new NFT collections",
             status: "future",
         },
         {
             phase: "Phase 8",
-            title: "New Outbreaks",
-            description: "Pandas, Bunnies, Penguins, Hedgehogs, and more join the realm.",
+            title: "Token Holder Rewards",
+            description:
+                "• Track and reward the top token holders\n• Exclusive NFTs, boosts, or governance votes for those holding the most tokens\n• Community recognition for top holders\n\nPurpose: Incentivize holding and reward loyal community members",
+            status: "future",
+        },
+        {
+            phase: "Phase 9",
+            title: "New Outbreaks Expansion",
+            description:
+                "Pandas, Bunnies, Penguins, Hedgehogs, and more join the realm with enhanced token integration.",
+            status: "future",
+        },
+        {
+            phase: "Phase 10",
+            title: "Treasury Growth & Ongoing Reinforcement",
+            description:
+                "• Allocate NFT mint revenues to continuously add liquidity\n• Use royalties from secondary sales to bolster pools\n\nPurpose: Ensure long-term liquidity strength and price stability",
             status: "future",
         },
     ]

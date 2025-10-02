@@ -13,13 +13,6 @@ const Navbar = () => {
             <div className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-3">
-                        <Image
-                            src="/assets/logo.png"
-                            alt="Project Outbreak"
-                            width={40}
-                            height={40}
-                            className="rounded-lg"
-                        />
                         <span className="text-xl font-bold text-foreground">Project Outbreak</span>
                     </Link>
 
@@ -45,6 +38,12 @@ const Navbar = () => {
                         >
                             FAQ
                         </a>
+                        <Link
+                            href="/whitepaper"
+                            className="text-muted-foreground hover:text-foreground transition-colors"
+                        >
+                            Whitepaper
+                        </Link>
                     </div>
 
                     <div className="flex items-center gap-4">
@@ -102,6 +101,13 @@ const Navbar = () => {
                         >
                             FAQ
                         </a>
+                        <Link
+                            href="/whitepaper"
+                            className="block text-muted-foreground hover:text-foreground transition-colors"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Whitepaper
+                        </Link>
                         <Link href="/ripple-realm" onClick={() => setIsOpen(false)}>
                             <Button variant="outline" size="sm" className="w-full">
                                 Explore Lore
